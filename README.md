@@ -1,6 +1,6 @@
 # GBA Hack ROM Documentation
 
-This repository contains documentation for the creation of a custom Game Boy Advance (GBA) hack ROM. In this project, we'll walk through the process of modifying an existing GBA game ROM to create a unique gaming experience.
+This repository contains documentation for the creation of a custom Game Boy Advance (GBA) hack ROM. In this project, we'll walk through the process of modifying an existing GBA game ROM to create our own game.
 
 ## Table of Contents
 
@@ -15,26 +15,24 @@ This repository contains documentation for the creation of a custom Game Boy Adv
 
 ## Introduction
 
-In this section, provide a brief overview of your GBA hack ROM project. Explain the goals, the original game you're modifying, and any unique features or changes you've made.
+My goal when starting this project was to create my own Pokemon hack ROM game based on Osona, 
+a little county where i've studied my computer science degree. Also, i did it in catalan because
+my teachers are going to appreciate that.
 
 ## Prerequisites
 
-List the prerequisites that anyone interested in replicating your project should have.
-This may include:
+- Install an GBA emulator
+Linux: flatpak install flathub io.mgba.mGBA
+Windows: [GBA Emulator](https://visualboyadvance.org/)
 
-- [GBA Emulator](link-to-emulator)
-- [ROM of the original game](link-to-original-rom)
-- [Assembler/Compiler](link-to-assembler)
-- [Hex Editor](link-to-hex-editor)
+- [Download Pokemon Fire-red](https://wowroms.com/es/roms/nintendo-gameboy-advance/pokemon-firered-version-usa/13828.html)
+- The other tools are on Tools folder
+
 
 ## Getting Started
 
-Explain how to set up the project. Include steps such as:
-
 1. Clone this repository: `git clone https://github.com/your-username/your-rom-hack.git`
 2. Download and install the required tools listed in the Prerequisites section.
-3. Obtain a ROM of the original game and place it in a folder named `input`.
-4. ...
 
 ## Modifying the ROM
 
