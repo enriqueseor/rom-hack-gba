@@ -1,73 +1,86 @@
-1   Master Ball
-2   Ultra Ball
-3   Great Ball
-4   Poké Ball
-5   Safari Ball
-6   Net Ball
-7   Dive Ball
-8   Nest Ball
-9   Repeat Ball
-10  Timer Ball
-11  Luxury Ball
-12  Premier Ball
-13  Potion
-14  Antidote
-15  Burn Heal
-16  Ice Heal
-17  Awakening
-18  Parlyz Heal
-19  Full Restore
-20  Max Potion
-21  Hyper Potion
-22  Super Potion
-23  Full Heal
-24  Revive
-25  Max Revive
-26  Fresh Water
-27  Soda Pop
-28  Lemonade
-29  Moomoo Milk
-30  Energypowder
-31  Energy Root
-32  Heal Powder
-33  Revival Herb
-34  Ether
-35  Max Ether
-36  Elixir
-37  Max Elixir
-38  Lava Cookie
-39  Blue Flute
-40  Yellow Flute
-41  Red Flute
-42  Black Flute
-43  White Flute
-44  Berry Juice
-45  Sacred Ash
-46  Shoal Salt
-47  Shoal Shell
-48  Red Shard
-49  Blue Shard
-50  Yellow Shard
-51  Green Shard
-63  HP Up
-64  Protein
-65  Iron
-66  Carbos
-67  Calcium
-68  Rare Candy
-69  PP Up
-70  Zinc
-71  PP Max
-73  Guard Spec.
-74  Dire Hit
-75  X Attack
-76  X Defend
-77  X Speed
-78  X Accuracy
-79  X Special
-80  Poké Doll
-81  Fluffy Tail
-83  Super Repel
+0x1	Master Ball
+0x2	Ultra Ball
+0x3	Great Ball
+0x4	Poké Ball
+0x5	Safari Ball
+0x6	Net Ball
+0x7	Dive Ball
+0x8	Nest Ball
+0x9	Repeat Ball
+0xA	Timer Ball
+0xB	Luxury Ball
+0xC	Premier Ball
+0xD	Potion
+0xE	Antidote
+0xF	Burn Heal
+0x10	Ice Heal
+0x11	Awakening
+0x12	Parlyz Heal
+0x13	Full Restore
+0x14	Max Potion
+0x15	Hyper Potion
+0x16	Super Potion
+0x17	Full Heal
+0x18	Revive
+0x19	Max Revive
+0x1A	Fresh Water
+0x1B	Soda Pop
+0x1C	Lemonade
+0x1D	Moomoo Milk
+0x1E	Energypowder
+0x1F	Energy Root
+0x20	Heal Powder
+0x21	Revival Herb
+0x22	Ether
+0x23	Max Ether
+0x24	Elixir
+0x25	Max Elixir
+0x26	Lava Cookie
+0x27	Blue Flute
+0x28	Yellow Flute
+0x29	Red Flute
+0x2A	Black Flute
+0x2B	White Flute
+0x2C	Berry Juice
+0x2D	Sacred Ash
+0x2E	Shoal Salt
+0x2F	Shoal Shell
+0x30	Red Shard
+0x31	Blue Shard
+0x32	Yellow Shard
+0x33	Green Shard
+0x34	HP Up
+0x35	Protein
+0x36	Iron
+0x37	Carbos
+0x38	Calcium
+0x39
+0x3A
+0x3B
+0x3C
+0x3D
+0x3E
+0x3F
+0x40
+0x41
+0x42
+0x43
+0x44	Rare Candy
+0x45	PP Up
+0x46	Zinc
+0x47	PP Max
+0x48	Guard Spec.
+0x49	Dire Hit
+0x4A	X Attack
+0x4B	X Defend
+0x4C	X Speed
+0x4D	X Accuracy
+0x4E	X Special
+0x4F	Poké Doll
+0x50	Fluffy Tail
+0x51	Super Repel
+
+
 84  Max Repel
 85  Escape Rope
 86  Repel
