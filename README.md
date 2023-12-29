@@ -25,7 +25,7 @@ my teachers are going to appreciate that.
 
 ## Getting Started
 
-1. Clone this repository: `git clone https://github.com/your-username/your-rom-hack.git`
+1. Clone this repository: `git clone https://github.com/enriqueseor/rom-hack-gba.git`
 
 ## Modifying the ROM
 
