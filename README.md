@@ -19,8 +19,8 @@ my teachers are going to appreciate that.
 
 ## Prerequisites
 
-- Install an GBA emulator
-- On ROM-BASE folder you have the base games you can use.
+- Install a GBA emulator
+- On ROM-BASE folder you have the base games you can modify.
 - On Tools folder you have all the tools needed.
 
 ## Getting Started
@@ -29,18 +29,13 @@ my teachers are going to appreciate that.
 
 ## Modifying the ROM
 
-Describe the process of modifying the GBA ROM. Include information on:
-
-- Editing graphics, maps, and sprites.
-- Changing gameplay mechanics or adding new features.
-- Modifying text or dialogues.
-- Any tools or scripts you've created to simplify the process.
-
-You can also include code snippets, screenshots, or examples to illustrate your modifications.
+- On the Documentation folder you have all the documentation to learn how to use the tools to modify the Base-ROMs.
+- Gameplay mechanics are supponsed to remain the same because your objective is just to create another Pokemon game.
+- Basically you can modify text and dialogues or editing graphics, maps and sprites.
 
 ## Testing
 
-Play your modfied game in the emulator and check if the desired modification are working properly.
+Play your modfied game in the emulator and check if the desired modifications are working properly.
 
 ## License
 
