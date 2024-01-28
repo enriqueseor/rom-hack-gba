@@ -1,11 +1,11 @@
-#EJECUTAR .EXE EN LINUX CON WINE
+EJECUTAR .EXE EN LINUX CON WINE
 
 Practicamente todas las herramientas para modificar ROMs de Pokemon están formato portable .exe, nativo para Windows OS, no siendo posible ejecutar-lo de forma nativa en Linux.
 La solución es instalar-se un programa como Wine(https://wiki.winehq.org/Main_Page) que permite ejecutar los ejecutables de Windows.
 
 El proceso de instalación es muy sencillo, está explicado en su web y es distinto para cada distribución de Linux, por lo que no lo explicaré aquí
 
-##PROBLEMAS EJECUTANDO CON WINE
+PROBLEMAS EJECUTANDO CON WINE
 
 Al abrir algunos .exe como Advance text o XSE no se ejecutaban. Si lanzamos el comando:
 wine Advance-Text.exe
@@ -16,5 +16,7 @@ Para ello usaremos un programa llamado Winetricks (https://wiki.winehq.org/Winet
 Para ejecutar el programa debeis ejecutar en la terminal:
 winetricks
 Se os abrirá una ventana así:
+
+![wine-wineprefix](images/wine-wineprefix)
 
 Seleccionamos “Select the default wineprefix”
