@@ -22,12 +22,3 @@ end
 'warpmuted      'no sound is played
 'warpteleport   'simulates a spin teleport effect
 'setwarpcomand  'sets a default warp
-
-
-
-
-
-
-
-
-

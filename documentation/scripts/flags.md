@@ -240,6 +240,3 @@ end
 
 #org @talk1
 = [black_fr]Choose[green_fr] BULBASAUR[black_fr]?
-
-
-
