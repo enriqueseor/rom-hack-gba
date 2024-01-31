@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "b52280adc82181f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "7318e22d04fd0e84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e9c2958427792d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HACK-ROM_GUIA_ES.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1038a0a369ba985e",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa49a5ab0bf1e598",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ee11636ebb625ad",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "06fa24f3e4b390e5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "07af5500d9a46b5d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "575139c64c7623da",
+    "type": "split",
+    "children": [
+      {
+        "id": "c07e6beafbd99fd3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6efd55001924518",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "HACK-ROM_GUIA_ES.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7575ed28976168b4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "HACK-ROM_GUIA_ES.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f52cf4109b67c506",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "10fc8aa8067a2beb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "HACK-ROM_GUIA_ES.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5e9c2958427792d3",
+  "lastOpenFiles": [
+    "notes/advanced-map-1.92.md",
+    "notes/wine.md",
+    "notes",
+    "wine.md",
+    "advanced-map-1.92.md",
+    "HACK-ROM_GUIA_ES.md",
+    "events.md",
+    "images/wine-.md",
+    "images/wine-wineprefix.md",
+    "codes/codes-movement.md",
+    "codes/codes-color.md",
+    "codes/codes-item.md"
+  ]
+}
