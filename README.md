@@ -4,23 +4,17 @@ This repository contains documentation for the creation of a custom Game Boy Adv
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Modifying the ROM](#modifying-the-rom)
 - [Testing](#testing)
 - [License](#license)
 
-## Introduction
-
-My goal when starting this project was to create my own Pokemon hack ROM game based on Osona, 
-a little county where i've studied my computer science degree. Also, i did it in catalan because
-my teachers are going to appreciate that.
-
 ## Prerequisites
 
 - Install a GBA emulator
-- On ROM-BASE folder you have the base games you can modify.
+- Use a ROM-BASE you can modify (Emerald, Rubi-saphire, fire red-leaf green).
+- On documentation folder you have all the info you need to do it.
 - On Tools folder you have all the tools needed.
 
 ## Getting Started
@@ -29,7 +23,7 @@ my teachers are going to appreciate that.
 
 ## Modifying the ROM
 
-- On the Documentation folder you have all the documentation to learn how to use the tools to modify the Base-ROMs.
+- On the Documentation folder you have all the documentation to learn how to use the tools to modify the BASE-ROMs.
 - Gameplay mechanics are supponsed to remain the same because your objective is just to create another Pokemon game.
 - Basically you can modify text and dialogues or editing graphics, maps and sprites.
 
