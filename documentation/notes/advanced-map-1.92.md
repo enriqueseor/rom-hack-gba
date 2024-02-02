@@ -4,20 +4,20 @@ A-Map es la herramienta principal para modificar una ROM. Nos permite cambiar lo
 La versión con la que voy a trabajar es la 1.92, así que los ejemplos y las explicaciones están enfocadas a esta versión concreta. Además,  trabajaremos con A-Map en ingles, ya que la versión en español puede darnos problemas.
 Quiero aclarar que la versión más nueva de A-Map es la 1.95. Como podéis ver en la foto posterior ambas versiones son muy antiguas, pero la más nueva vendría a ser la versión developer que nos puede dar problemas por estar menos pulida.
 
-![](advancedmap-versions.png)
+![](amap-versions.png)
 Aquí os dejo su web:
 http://ampage.no-ip.info/
 
-![](advancedmap-mainframe.png)
+![](amap-mainframe.png)
 Una vez abrimos A-Map el primer pasa que siempre hemos de realizar es abrir la ROM que queramos modificar (File > Load ROM) o podemos clicar sobre el botón marcado en rojo en la imagen anterior que nos abrirá una ventana de exploración desde donde buscaremos la ROM.
 Una vez cargada la ROM ya podemos empezar a trabajar. Los mapas los abriremos por “From Header”, la carpeta Map files no la tocaremos. Dentro de esta encontraremos todos los mapas ordenados por carpetas o “banks”.
 
-![](advancedmap-mapfolder.png)
+![](amap-mapfolder.png)
 
 Para acabar, si seleccionamos el botón rodeado en rojo podremos guardar los cambios que vamos realizando. Es recomendable hacerlo constantemente e ir haciendo copias de seguridad de la ROM modificada regularmente.
 
 Pulsando sobre cualquier mapa lo abrimos y lo podemos visualizar:
-![](advancedmap-mapopened.png)
+![](amap-mapopened.png)
 ## TILESET
 Son los recuadros que nos permiten “pintar” el mapa.
 MAP
@@ -28,12 +28,12 @@ Guardad este atajo de teclado por que os ahorrará horas de mapeo si tuvieseis q
 El atajo nos generará una pequeña ventana flotante (Grosser block) donde podremos ver lo que tenemos seleccionado. Esto nos permitirá poner decenas de arboles con un solo clic o mover un edificio entero de lugar.
 Tened en cuenta que allí donde hagas el clic deberá ser el extremo de arriba y de la izquierda de donde quieras colocar aquello seleccionado.
 
-![](advancedmap-grosserblock.png)
+![](amap-grosserblock.png)
 ## BORDER BLOCK
 Es un bloque que es reproducirá indefinidamente para que el jugador no pueda ver que el mapa tiene un fin. Permitiéndonos conseguir un juego más profesional pero sin aumentar casi nada el peso del juego teniendo que hacer mapas enormes innecesariamente.
 Hemos de vigilar si juntamos dos mapas que tienen un border block diferente, pues se sobrepondrán el uno al otro:
 
-![](advancedmap-borderblock.png)
+![](amap-borderblock.png)
 
 Esto lo podemos solucionar de dos maneras:
     1. Haciendo pasar lejos al jugador del borde del mapa,impidiendo que pueda ver los dos border blocks.
@@ -126,13 +126,14 @@ Aquí tenéis la tabla con todos los permisos explicados:
 
 En la siguiente página tenéis un ejemplo con la puesta en práctica de lo que hemos aprendido, llevando al límite los permisos jugando con las distintas elevaciones:
 
-![](advancedmap-movpermission1.png)
-![](advancedmap-movpermission2.png)
+![](amap-movpermission1.png)
+![](amap-movpermission2.png)
 
 
 ## EVENTS
+
 ### PERSON EVENT
-![](advancedmap-personevent.png)
+![](amap-personevent.png)
 Nos permite añadir personas en el mapa, conocidos como minisprites o minis. Los cuales podemos situar en cualquier punto del mapa y elegir dentro de los minis que tenemos en el juego el que queramos.
 Si no le asociamos un script al mini y hablamos con él, el juego quedará congelado.
 
@@ -147,7 +148,7 @@ Si no le asociamos un script al mini y hablamos con él, el juego quedará conge
 
 ### SIGNPOST EVENT
 
-![](advancedmap-signpostevent.png)
+![](amap-signpostevent.png)
 Se utilizan en carteles de ciudades y rutas o para objetos ocultos.
  
 |OPCIONES DE EDICIÓN|                                                                        |
@@ -158,7 +159,7 @@ Se utilizan en carteles de ciudades y rutas o para objetos ocultos.
 
 ### WARP EVENT
 
-![](advancedmap-warpevent.png)
+![](amap-warpevent.png)
 Son los que nos llevan de un mapa a otro que no esta conectado.
 Se ponen en la entrada de casas, cuevas, escaleras, etc. Configurar los es muy fácil, solo necesitamos poner dos warps que se apunten mutuamente.
 Haciendo doble clic sobre cualquiera nos abrirá automáticamente el mapa al que nos lleva.
@@ -172,3 +173,92 @@ Haciendo doble clic sobre cualquiera nos abrirá automáticamente el mapa al que
 |Map       |Id del mapa al que nos llevará el warp               |
 
 En el ejemplo anterior podemos ver que el warp que tenemos seleccionado nos llevará a un mapa en el bank 1, dentro de ese bank hay un mapa que es el numero 88 y dentro de este mapa hay un warp que tiene de id 1. Esto ultimo es importante para aparecer justo en el warp del mapa que querais y no en cualquier otro.
+
+### SCRIPT EVENT
+
+En español se conocen como scripts de gatillo, pues “saltan” cuando el jugador se ubica sobre el bloque en donde están colocados.
+
+![](amap-scriptevent.png)
+
+Aquí podemos ver la primera ruta de Pokémon Esmeralda, donde nos encontraremos al profesor siendo atacado por un Pokémon salvaje. Todos elos scripts que vemos al lado del que esta seleccionado son iguales, no permitiendo que el personaje se pueda ir de la acción en mitad del evento.
+Para verlo solo tenéis que cliquear sobre “_Open script_”
+
+![](amap-scriptcode.png)
+
+|#dynamic 0x900000|indica que el offset del script será de tipo dinámico y empezará a buscar un espacio libre en memoria a partir del offset 900000|
+|---|---|
+|#org @start|Start es el puntero que indica el inicio del script. Cada puntero tiene una dirección en memoria, nosotros tenemos que colocarle la de start al script offset|
+|lockall|Bloquea todos los elementos en movimiento, jugador incluido.|
+|Msgbox @string1<br><br>MSG_KEEPOPEN|Genera una caja con mensaje y la mantiene abierta|
+|closeonkeypress|Cierra la caja con mensaje cuando el jugador pulsa un botón|
+|Applymovement MOVE_PLAYER @move1|Aplica movimiento a un mini<br><br>Indica que el mini al que se le aplican los movimientos es el del jugador<br><br>Mueve un bloque a la derecha al jugador|
+|realeaseall|Deshace el lockall inicial|
+|end|Final del script|
+
+Como es un tema extraordinariamente extenso lo veremos por separado mas adelante.
+
+### WILD POKÉMON
+
+Cuando estamos dentro de un mapa podemos encontrar Pokémons salvajes. Estos se pueden encontrar en 4 sitios diferentes:
+
+![](wildpokemon-site.png) 
+"GRASS” (hierba alta)
+“WATER” (haciendo surf)
+“TREE” (utilizando miel)
+“FISHING ROD” (caña de pescar).
+
+![](wildpokemon-encounterratio.png)
+
+Debajo tenemos el “_Encounter ratio_” que un numero que determina el % de probabilidad hay cada vez que nos ubicamos sobre un bloque con hierba alta (en este caso).
+
+Si cliqueamos en “_Expand_” podemos añadir cualquiera de estos 4 modos para encontrar Pokémons salvajes en nuestro mapa o quitarlos:
+
+![](wildpokemon-expand.png)
+
+Cabe decir que la cantidad de Pokémons que podemos encontrarnos en cada sección de estas tiene un número predeterminado que no se puede modificar.
+
+La probabilidad de que nos aparezca un Pokémon u otro viene determinado implícitamente por su posición en la tabla, no pudiendo ser modificadas dichas probabilidades.
+
+Probabilidades con Pokémons encontrados en la hierba alta:
+![](wildpokemon-grassprob.png)
+
+Probabilidades con Pokémons pescados:
+![](wildpokemon-rodprob.png)
+
+Probabilidades con Pokémons encontrados haciendo surf:
+![](wildpokemon-surfprob.png)
+
+Probabilidades con Pokémons usando miel en un árbol:
+![](wildpokemon-treeprob.png)
+
+## HEADER
+
+![](amap-header.png)
+
+**Name**: Podemos ponerle o cambiarle el nombre al mapa dentro de todos los nombres que tenemos. No podemos tener más nombres del numero predeterminado que lleva la ROM.
+**Show name on entering**: si queremos que se muestre el nombre del mapa cada vez que entremos.
+**Weather**: indica el clima del mapa.
+**Type**: indica el tipo de mapa (Village o pueblo en este caso).
+**Cave**: es para definir si se puede usar la “MO Destello”.
+
+**USED TILESETS:**
+Tileset1 o principal
+Tileset 2 o secundario
+MAP DIMENSIONS
+
+Nos permite cambiar las dimensiones del mapa cambiando su ancho y alto.
+El tamaño del mapa es limitado y la superficie total es variable, aunque suele rondar los 7.000 bloques. Cabe decir que este tamaño es enorme, por lo que no lo consideraría una limitación como tal, sino un límite.
+
+![](dim100x75.png)
+7.500 bloques
+
+![](dim40x172.png)
+6.880 bloques
+
+![](dim60x122.png)
+7.320 bloques
+
+EL mapa **CUADRADO** más grande que puede existir es de **86x86**. Esto es importante por ejemplo por si nos planteamos hacer un mundo abierto.
+![](profheaderview.png)
+
+Si hacemos “**CONTROL + H**” en el HEADER podemos ver la “_Professional Header View_”.
