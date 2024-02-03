@@ -16,17 +16,17 @@ Para ejecutar el programa debeis ejecutar en la terminal:
 winetricks
 Se os abrirá una ventana así:
 
-![](images/wine-wineprefix.png)
+![](wine-wineprefix.png)
 Seleccionamos “Select the default wineprefix”
 
-![](images/wine-windowsDLL.png)
+![](wine-windowsDLL.png)
 Ahora lo que queremos hacer es instalar una librería DLL, así que seleccionamos “_Install a Windows DLL or component_” y aceptar.
 
-![](images/wine-vb6run.png)
+![](wine-vb6run.png)
 
 Buscamos el Package vb6run y aceptamos.
 
 Nos saldrán estos dos errores, no sufráis y le dais a aceptar.
 
-![](images/wine-VBlicense.png)
+![](wine-VBlicense.png)
 Por último aceptamos los términos de la licencia. Ahora ya podemos ejecutar sin problemas tanto XSE como Advance text.
