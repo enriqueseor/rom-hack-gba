@@ -262,3 +262,224 @@ EL mapa **CUADRADO** más grande que puede existir es de **86x86**. Esto es impo
 ![](profheaderview.png)
 
 Si hacemos “**CONTROL + H**” en el HEADER podemos ver la “_Professional Header View_”.
+
+
+## INSERTANDO MAPAS
+
+### CREANDO NUEVOS MAPAS
+
+Es frecuente que en el nuestro juego queramos más mapas de los que ya tenemos. Para ello podemos necesitar más mapas.
+
+![](new-map.png)
+
+Con el juego abierto cliqueamos sobre el botón marcado arriba.
+
+(**“Create new Map”**)
+
+![](create-new-map.png)
+
+Nos aparecerá un panel que nos pedirá los parámetros básicos del mapa:
+- Nombre del mapa (Map name)
+- anchura (Width
+- altura (Height)
+- Tileset principal (Tileset 1)
+- Tileset secundario (Tileset 2)
+
+![[blank-map.png]]
+
+Una vez creado nos aparecerá un mapa así con los tilesets seleccionados. Ahora nos tocará “pintar”.
+![[new-map-done.png]](.png)
+
+Una vez hayamos acabado nos hemos acordar de establecer las “_Movement Permissions_”:
+
+![[default-permissions.png]]
+
+Como podéis ver si insertamos así el mapa en el juego el personaje podrá caminar por todos los bloques. Por eso hemos de establecer las prohibiciones.(1).
+
+![](permissions-set.png)
+
+![](insert-map.png)
+
+Ahora debemos clicar el botón de insertar (_I__nsert map_).
+
+Se nos abrirá una pestaña como la siguiente:
+![](bank.png)  
+Dentro de la opción “_Create_ _new_ _space_” seleccionamos el “_Bank_” donde queremos que es coloque nuestro mapa. En mi caso le diré que en cree uno nuevo.
+
+### CREANDO NUEVAS CONEXIONES
+
+Una vez hemos creado un nuevo mapa lo tenemos que conectar con otros para que el jugador pueda acceder a él. Para ello creamos “conexiones”.
+
+**NOTA: hemos de tener en cuenta que este tipo de conexiones son directas, no usando un WARP. Por tanto, los tilesets 2 de ambos mapas tendrán que ser los mismos, sino el resultado no sera óptimo. Siempre que no impidamos que el jugador pueda ver el border block allí donde se unen ambos.**
+![[connection-button.png]]
+
+Si seleccionamos el botón que tiene 4 flechas se nos abrira un menú como el siguiente:
+![[connections.png]]
+
+Aquí tendremos las siguientes opciones:
+- Número de conexiones que tiene el mapa
+- Dirección de cada conexión
+- El “_Bank_” del mapa
+- El nº del mapa
+
+Si seleccionamos “_Add_” nos agregara una nueva conexión. Después hemos de cambiar la “_Direction_” de “_Nothing_” a la dirección que queramos, en mi caso por ejemplo a “_Right_”.
+
+![[connections-options.png]]
+
+Además hemos de indicar el número de mapa que queremos agregar (en el nuestro caso 0) y el su “_B__ank_”, en este caso el 34.
+
+Este proceso lo hemos de repetir en ambos mapas. Un vez hecho esto podemos ver el resultado final:
+![[connection-result.png]]
+
+Ahora vamos atratar el offset, que antes no lo hemos tenido en cuenta. Este nos será de utilidad cuando queramos conectar dos mapas que tengas dos lados diferentes y que necesitamos que encajen de una manera determinada.
+
+Un ejemplo de ello sería por ejemplo las 3 conexiones que tiene ciudad verde en Pokémon Rojo Fuego, en donde las 3 rutas que convergen en la ciudad son más estrechas que la misma.
+  
+Si no modificáramos en offset los mapas se unirían tal que así:
+![[connection-offset-exp.png]]
+Lo normal es que quisiésemos centrar las rutes que confluyen en nuestra ciudad, y para ello hemos de modificar el offset.
+
+Para saber que valor le hemos de dar contamos el número de bloque desde la parte izquierda o superior de cada mapa, teniendo en cuenta por que lado estará nuestra conexión.
+
+Ciudad verde peor ejemplo con su ruta inferior (ruta 1) tiene el punto de la conexión por la izquierda en el bloque 22, i la ruta 1 en el bloque 10.
+
+Si restamos 10 a 22 nos da 12, es por eso que vemos el valor 12 en el offset de ciudad verde. Por el otro lado si restemos 22 a 10 tendremos como a resultado -12 siendo el valor que vemos en el offset de la ruta.
+
+Como podéis ver el valor del offset siempre será el mismo numero pero en vez de positivo en negativo en el mapa pequeño.
+
+### BLOCK EDITOR
+
+El editor de bloques nos permitirá editar el tileset de cada uno de los mapas, bien por que queramos renovar completa o parcialmente loa gráficos de la ROM original o por motivos de guion nos veamos obligados a insertar elementos que no existen en la ROM original.
+
+En los mapas hay un tileset principal (Tileset 0) y uno secundario (Tileset 1). En el principal encontramos los gráficos que se utilizan constantemente. Es por eso que el Tileset exterior principal siempre sera el mismo (el numero 0, lo podéis comprobar en el “_H__eader_”), y el que cambiará normalmente sera el secundario.
+
+![[blockeditor-btn.png]]
+
+El Block Editor es una opción del A-MAP que nos cambiar o editar nuestro tiles. Para acceder a el clicamos el icono con forma de pieza de puzzle. Obviamente hemos de tener abierto algún mapa para acceder a él.
+
+#### BLOCK EDITOR WORKAREA
+![[blockeditor-workarea.png]]
+
+**TILESET**
+Hi tenim tots els blocs que podem utilitzar actualment a l’hora de mapejar. Aquests blocs es poden editar amb elements del tileset
+
+**PALETA**
+Esta compuesta por bloques de 8x8 que nos permites crear los bloques del tileset en la pestaña down/up. Estas paletas las descargaremos, modificaremos y volveremos a cargar en la ROM para insertar bloques nuevos.
+
+**DOWN/UP**
+Carga la composición del bloque en dos cuadrados diferentes. Los bloques están compuestos por una parte inferior y una superior. Permitiéndonos crear bloques que sean la combinación de otros, como por ejemplo la copa de un árbol con yerba alta detrás, como podéis ver en el tileset.
+
+**X-FLIP i Y-FLIP**
+Sirven para voltear las tiles de 8x8 de manera que cuando creemos bloques simétricos o diferentes bloques simétricos entre ellos solo necesitaremos insertar un bloque de 8x8 y voltear-lo, ahorrando espacio.
+
+**PALETTE0**
+Nos permite seleccionar cualquiera de las 12 paletas que podemos tener en el juego. Cada una de ellas puede tener como máximo 15 colores, más 1 color que actúa como transparencia.
+
+LAS PALETES 0-6 CORRESPONDEN AL TILESET 0 Y LAS 7-12 AL TILESET 1
+
+En Pokémon Rojo Fuego cada paleta se usa para lo siguiente:
+
+|Palette0|Arboles, hierba, arbustos, etc.|
+|--------|-------------------------------|
+|Palette1|Montaña|
+|Palette2|Centro Pokémon|
+|Palette3|Tienda Pokémon|
+
+**BEHAVIOR-BYTE**
+![[behavior-byte.png]]
+- **Use warp/use door warp**: Para que sobre el bloque funcionen los warps
+- **Grass animation (Pokémon):** Al pisar el bloque se ejecuta la animación de hierba alta.
+- **Arrow (Direction) => Warp **“X” of Block**: Permite que funcionen os warps sobre el bloque en una dirección específica.
+- **00**: Sin comportamiento
+
+**BACKGROUND-BYTE**
+![[background-byte.png]]
+- **00**: el bloque cubre al jugador.
+- **Block is covered by hero**: Cuando creamos un bloque con una parte superior y otra inferior, nuestro héroe por defecto estará en la capa de en medio, si queremos que la parte superior este detrás del héroe cuando pasa sobre el debemos debemos seleccionar esta opción.
+
+#### BLOCK EDITOR TOOLBAR
+![[blockeditor-picture.png]]
+
+**PICTURE**
+- **Save tileset** **1**: Exporta la imagen del tileset principal
+- **Load tileset** **1**: Importa la imagen del tileset principal
+- **Save tileset 2**: Exporta la imagen del tileset secundari
+- **Load tileset 2**: Importa la imatge del tileset secundari
+- **Load new blocks**: refresca los bloques que han sido modificados en los tilesets.
+
+![[blockeditor-blocks.png]]
+**BLOCKS**
+- **Save tileset 1**: Exporta l’orde dels blocs del tileset principal
+- **Load tileset 1**: Importa l’orde dels blocs del tileset principal
+- **Save tileset 2**: Exporta l’orde dels blocs del tileset secundari
+- **Load tileset 2**: Importa l’orde dels blocs del tileset secundari
+- **Change amount**: Cambia la cantidad de bloques del tileset secundario.
+
+![[blockeditor-palettes.png]]
+#### PALETTES
+- **Show palette editor**: Muestra el editor de paletas.
+
+![[palette-form.png]]
+
+Podemos ver los 16 colores que conforman la paleta. El primero es el color transparente.
+- **Write palette changes to ROM**: Guarda los cambios que hayamos hecho en las paletas en la ROM
+- **Write current palette to file**: Exporta la paleta en forma de archivo
+- **Load current palette from file**: Carga una paleta desde un archivo externo.
+- **Change palette definition of block data**: Cambia todos los tiles de una determinada paleta a otra definida por el usuario.
+
+### INSERTAR TILES
+
+En primer lugar necesitamos descargar-nos los tiles de internet:
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_fbe8d2ca.png)
+
+Pongamos que queremos insertar estos tiles. Os tenéis que asegurar que los tiles no contengan más de 15 colores diferentes, así que buscad tiles específicos para ROM hacking si os queréis ahorrar trabajo.
+
+Abriremos la herramienta tileHelperAvance.
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_c4b1b7d.png)
+
+Y abrimos el archivo del tile:
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_e27b350e.png)
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_42927ce6.png)
+
+Cliqueamos en “_C__onvert tileset_”:
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_4588944f.png)
+
+Nos saldrá una especie de error, no sufráis, es normal.
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_193592c6.png)
+
+Seleccionamos “_S__ave palette_” y guardemos el archivo como “_A__dvance__M__ap_ _1.92-P__alette_ _(__.__pal)_” en mi cas, si usais A-Map 1.95 ya sabeis...
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_e58294f3.png)
+
+Ahora abrimos abrimos AdvanceMap y en el Block Editor seleccionamos lo siguiente:
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_64c6718f.png)
+
+Seleccionamos el archivo .pal que hemos guardado hace un momento. Esto nos cargará la paleta que tenía nuestro tile. Ahora vamos a “_Picture_” y guardamos el tileset 2.
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_a03b752d.png)
+
+Nos lo hará guardar en formato “_Device Intependent Bitmap o .dib_”
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_124fc0da.png)
+
+Ahora abrimos este archivo con Paint o similares y pegamos en este archivo el tile que queríamos insertar.
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_fc103798.png)
+
+Quedaría así insertado:
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_6a92c6f9.png)
+
+Guardemos y vamos a Advanced Map de nuevo
+
+Entonces hacemos lo siguiente:
+
+![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_e9413a9a.png)
+
+**EL RESULTADO FINAL NO FUE SATISFACTORIO**
