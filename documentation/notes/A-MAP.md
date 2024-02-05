@@ -389,7 +389,7 @@ En Pokémon Rojo Fuego cada paleta se usa para lo siguiente:
 ![[behavior-byte.png]]
 - **Use warp/use door warp**: Para que sobre el bloque funcionen los warps
 - **Grass animation (Pokémon):** Al pisar el bloque se ejecuta la animación de hierba alta.
-- **Arrow (Direction) => Warp **“X” of Block**: Permite que funcionen os warps sobre el bloque en una dirección específica.
+- **Arrow (Direction) => Warp “X” of Block**: Permite que funcionen os warps sobre el bloque en una dirección específica.
 - **00**: Sin comportamiento
 
 **BACKGROUND-BYTE**
@@ -430,56 +430,47 @@ Podemos ver los 16 colores que conforman la paleta. El primero es el color trans
 ### INSERTAR TILES
 
 En primer lugar necesitamos descargar-nos los tiles de internet:
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_fbe8d2ca.png)
+![](tile.png)
 
 Pongamos que queremos insertar estos tiles. Os tenéis que asegurar que los tiles no contengan más de 15 colores diferentes, así que buscad tiles específicos para ROM hacking si os queréis ahorrar trabajo.
 
 Abriremos la herramienta tileHelperAvance.
 
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_c4b1b7d.png)
+![](tilehelperadvanced.png)
 
 Y abrimos el archivo del tile:
+![](openimage.png)
 
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_e27b350e.png)
+![](convert-tileset.png)
+Cliqueamos en “_Convert tileset_”
 
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_42927ce6.png)
-
-Cliqueamos en “_C__onvert tileset_”:
-
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_4588944f.png)
+![](bcknotblack.png)
 
 Nos saldrá una especie de error, no sufráis, es normal.
+![](savepalette.png)
+Seleccionamos “_Save palette_” y guardemos el archivo como “_Advance Map 1.92-Palette (.pal)_” en mi caso, si usais A-Map 1.95 ya sabeis...
 
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_193592c6.png)
-
-Seleccionamos “_S__ave palette_” y guardemos el archivo como “_A__dvance__M__ap_ _1.92-P__alette_ _(__.__pal)_” en mi cas, si usais A-Map 1.95 ya sabeis...
-
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_e58294f3.png)
+![](extension-pal.png)
 
 Ahora abrimos abrimos AdvanceMap y en el Block Editor seleccionamos lo siguiente:
-
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_64c6718f.png)
+![](loadpalette.png)
 
 Seleccionamos el archivo .pal que hemos guardado hace un momento. Esto nos cargará la paleta que tenía nuestro tile. Ahora vamos a “_Picture_” y guardamos el tileset 2.
-
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_a03b752d.png)
+![](savetileset2.png)
 
 Nos lo hará guardar en formato “_Device Intependent Bitmap o .dib_”
-
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_124fc0da.png)
+![](extension-dib.png)
 
 Ahora abrimos este archivo con Paint o similares y pegamos en este archivo el tile que queríamos insertar.
-
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_fc103798.png)
+![](palette-opened.png)
 
 Quedaría así insertado:
-
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_6a92c6f9.png)
+![](palette-insertedtile.png)
 
 Guardemos y vamos a Advanced Map de nuevo
 
 Entonces hacemos lo siguiente:
 
-![](file:///tmp/lu72631dwsm.tmp/lu72631dwsp_tmp_e9413a9a.png)
+![](load-tileset2.png)
 
 **EL RESULTADO FINAL NO FUE SATISFACTORIO**
