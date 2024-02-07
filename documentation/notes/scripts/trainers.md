@@ -1,9 +1,5 @@
-TRAINERS
-
-*--------------*
- TRAINER BATTLE
-*--------------*
-
+### TRAINER SCRIPT
+```js
 #dynamic 0x800000
 
 #org @start
@@ -22,7 +18,7 @@ end
 
 #org @introText
 = This is a type 0x0 battle!
-
+```
 
 
 'checktrainerflag
