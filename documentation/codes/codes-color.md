@@ -1,11 +1,11 @@
 ----- FIRE RED & LEAF GREEN -----
-White          - [white_fr]
-Black          - [black_fr] //DEFAULT COLOR
-Grey           - [grey_fr]
-Red            - [red_fr]
-Orange         - [orange_fr]
-Green          - [green_fr]
-Light Green    - [lightgreen_fr]
+White - [white_fr]
+Black - [black_fr] //DEFAULT COLOR
+Grey - [grey_fr]
+Red - [red_fr]
+Orange - [orange_fr]
+Green - [green_fr]
+Light Green  - [lightgreen_fr]
 Blue           - [blue_fr]
 Light Blue     - [lightblue_fr]
 Light Blue 2   - [lightblue2_fr]

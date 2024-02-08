@@ -1,4 +1,5 @@
---- R/E ---
+--- Rubí / Emerald ---
+```
 #raw 0x00 = Face Down
 #raw 0x01 = Face Up
 #raw 0x02 = Face Left
@@ -131,8 +132,9 @@
 #raw 0x9C = Fly Up Vertically
 #raw 0x9D = Land
 #raw 0xFE = End of Movements
-
+```
 --- Fire Red ---
+```
 #raw 0x0 = Face Down
 #raw 0x1 = Face Up
 #raw 0x2 = Face Left
@@ -230,3 +232,4 @@
 #raw 0x65 = Double Exclamation Mark (!!)
 #raw 0x66 = Happy (^_^)
 #raw 0xFE = End of Movements
+```
