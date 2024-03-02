@@ -1,129 +1,129 @@
-Attaque Normale
-Chance d'endormir
-Attaque avec chances PSN
-Attaque avec drainage
-Attaque avec chance de brûler
-Attaque avec chance de geler
-Attaque et chance de para.
-Attaque auto-destructive
-Attaque si l'adversaire dort 
-Copie attaque de l'adversaire
-Augmente l'attaque
-Augmente la défense
-Pas d'effet
-Augmente l'attaque spéciale
-Pas d'effet
-Pas d'effet
-Augmente l'esquive
-100% chances réussite attaq.
-Baisse l'attaque
-Baisse la défense
-Baisse la vitesse
-Pas d'effet
-Pas d'effet
-Baisse la précision
-Baisse l'évasion
-Stats redeviennent normales
-Contre attaque dans 3 tours
-Attaque 3 fois et confusion
-Fuir/switcher le Pkmn adv.
-Attaque de 2 à 5 fois
-Change le type d'attaque
-Peut apeurer l'adversaire
-Rends des PV
-Empoisonne gravement
-Vole de l'argent
-Puissance attaq. spé. ÷2
-Attaque + PAR,PSN,GEL (?)
-Dort 3 tours et gagne PV
-K.O en un coup
-Augmente taux coup critique
-Fait baisser moitié des PV
-Enlève toujours 40 PV
-Att. 2-5 T., baisse évasion
-Chance de coup critique
-Attaque 2x
-Attaque ratée => PV perdus
-Prévient changements statuts
-Augmente taux coup critique
-Att., et fait perdre 1/4 PV
-Rend confus
-Augmente beaucoup l'attaque
-Augmente beaucoup la défense
-Augmente beaucoup la vitesse
-Augmente beaucoup l'att.spé.
-Augmente beaucoup déf.spé.
-Pas d'effet
-Pas d'effet
-Se transforme en l'adversaire
-Baisse beaucoup l'attaque
-Baisse beaucoup la défense
-Baisse beaucoup la vitesse
-Baisse beaucoup l'att.spé.
-Baisse beaucoup déf.spé.
-Pas d'effet
-Pas d'effet
-Dégats att. physiques ÷2
-Empoisonne
-Paralyse
-Attaque, peut baisser l'att.
-Attaque, peut baisser déf.
-Attaque, peut baisser vit.
-Att. peut baisser att.spé.
-Att. peut baisser déf.spé.
-Att. peut baisser précis.
-Pas d'effet
-Attend, attaque tour suivant
-Attaque, peut rendre confus
-Attaque 2 fois, peut PSN.
-Adv. att. 1er, att. rate pas.
-Baisse PV, crée clone
-Attaque, recharge tour suiv.
-Attaque, peut augmenter att.
-Copie prochaine att. advers.
-Lance une attaque au hasard
-Att, draine PV tours suiv.
-Eclaboussement, puis rien.
-Empêche utilisation att.
-Puiss. dépend du niv. adv.
-Attaque à puissance aléatoire
-Contre-attaque
-Adv. répète dernière att.
-Agit comme Balance
-Att. lancée quand on dort
-Agit comme Conversion
-Prochaine attaque ratera pas
-Copie attaque ennemie perman.
-Pas d'effet
-Utilis. att. aléat. dort
-Pkmn K.O => Ennemi K.O
-Moins PV => Att. + puissante
-Baisse les PP adversaire
-Laisse PV ennemi à 1.
-Restaure le statut équipe
-Attaque toujours en premier
-Attaque 3 fois
-Vole l'objet de l'ennemi
-Prévient l'évasion
-Provoque des cauchemars
-Augmente l'esquive
-Agit comme Malédiction
-Pas d'effet
-Protège la cible (Abri...)
-Inflige dég. chang. poké.
+Normal Hit
+Put to Sleep
+Hit + Poison
+Hit + Heal
+Hit + Burn
+Hit + Freeze
+Hit + Parlyze
+Hit + Selfdestruct
+Hit if Opp. is sleeping
+Copy Attack of Opp.
+Raise Attk.
+Raise Def.
+No effect
+Raise Sp. Attk.
+No effect
+No effect
+Raise Evas.
+100% hit + no Type diff.
+Lower Attk.
+Lower Def.
+Lower Spd.
+No effect
+No effect
+Lower Acc.
+Lower Evas./Attract PKMN
+All Stats normal
+Take dmg. + attk. in 3 turns
+Attk. 3 turns + confuse
+Scare Opp./Switch PKMN
+Hit 2-5x
+Change to Attack type
+Target flinches
+Recover health
+Poison badly
+Earn money
+1/2 Spec. dmg f. 5 Rounds
+Hit + Pois./Parl./Frz.
+Sleep 3 turns + Full HP
+1 hit K.O
+Raise Critical chance
+Half HP
+Always 40 HP hit
+2-5 hits + Lower Evas.
+Critical Hit
+Hit 2x
+Hit or Self damage
+Prevent Status changes
+Raise Critical chance
+Hit + take 1/4 damage
+Confuse target
+Raise Attack sharply
+Raise Defence sharply
+Raise Speed sharply
+Raise Spec. Att. sharply
+Raise Spec. Def. sharply
+No Effect
+No Effect
+Transf. into Target
+Lower Attack sharply
+Lower Defence sharply
+Lower Speed sharply
+Lower Spec. Attk. sharply
+Lower Spec. Def. sharply
+No Effect
+No Effect
+Taken damage is 1/2
+Poison
+Parlyz
+Hit + Lower Attk.
+Hit + Lower Def.
+Hit + Lower Spd.
+Hit + Lower Spec. Attk.
+Hit + Lower Spec. Def.
+Hit + Lower Acc.
+No Effect
+Charge + Attack
+Hit + Confuse
+2 Hits + Poison
+Strike 1st + 100% hit
+Half HP + create Doll
+Attack + Charge
+Hit + Raise Attack
+Copy Opp.'s last Move
+Cast random Move
+Hit + Heal each round
+Splash... Nothing... -.-
+Disable last used Move
+Power depends on Lvl.
+Hit (Attack x 1 - 1.5)
+Counter Attack
+Opp. repeats last Move
+Rest. HP ((HP + Opp. HP) / 2)
+Hit + 30% chance of Switch
+Own Type > Opp. Type
+Next attack hits 100%
+Learn last Move permanently
+No Effect
+Cause random Move while Slp.
+Defeat Pokémon
+Less HP = More Power
+Decrease last Moves PP
+Lower HP to 1
+Restore Team's Status
+Always 1st strike
+Hit 3x
+Steal Item
+Prevent escape
+Cause Nightmares
+Raise Evas.
+Cause Curse
+No Effect
+Protect target
+Cause dmg. on PKMN switch
 113
-Tous Pokémons KO 3 tours
-Provoque tempête de sable
-Agit comme Tenacité
-Agit comme Roulade
-Rend confus, augm. att. 
-Augmente puiss. att. tour
-Agit comme Attraction
-Puissance att. => Amitié
-Att. ou donne des PV
-Augm. att.
-Agit comme Rune Protect
-Attaque + chance brûler
+Defeat after 3 rounds
+Cause a Sandstorm
+Survive Hit with at leat 1 HP
+Hit until miss
+Confuse + Raise Attk. sharply
+Raise Attk. until miss
+50% chance of not Attacking
+Power depends on Loyality
+Damage or Heal
+Raise Attk.
+Stop Psn. Moves f. 5 Rounds
+Hit + Burn
 126
 127
 128
@@ -137,7 +137,7 @@ Attaque + chance brûler
 136
 137
 138
-Att. + augmente att.
+Hit + Raise Own Attk.
 140
 141
 142
