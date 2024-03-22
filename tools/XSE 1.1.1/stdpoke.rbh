@@ -273,6 +273,8 @@
 
 
 
+
+
 #define PKMN_TREECKO 0x115
 #define PKMN_GROVYLE 0x116
 #define PKMN_SCEPTILE 0x117

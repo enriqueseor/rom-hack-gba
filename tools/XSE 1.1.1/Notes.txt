@@ -1,47 +1,44 @@
-if...
-[*]0x0 - Menor a...
-[*]0x1 - Igual a...
-[*]0x2 - Mayor a...
-[*]0x3 - Menor o igual a...
-[*]0x4 - Mayor o igual a...
-[*]0x5 - Distinto de...
+#raw 0 'Mirar abajo
+#raw 1 ' Mirar arriba
+#raw 2 ' Mirar izquierda
+#raw 3 ' Mirar derecha.
+#raw 4 'Caminar abajo velocidad 1
+#raw 5 Caminar arriba velocidad 2
+#raw 6 ' Caminar izquierda velocidad 2
+#raw 7 ' Caminar derecha velocidad 2
+#raw 8 ' Caminar abajo velocidad a la que va el protagonista
+#raw 9 ' Caminar arriba velocidad a la que va el protagonista
+#raw A ' Caminar izquierda velocidad a la que va el protagonista
+#raw B ' Caminar derecha velocidad a la que va el protagonista
+#raw 15 'Correr Abajo (No prota)
+#raw 16 'Correr Arriba (No prota)
+#raw 17 'Correr Izquierda (No prota)
+#raw 18 'Correr Derecha (No prota)
+#raw 35 correr hacia abajo
+#raw 36 correr hacia arriva
+#raw 37 correr a la izquierda
+#raw 38 correr a la derecha
+#raw 42 saltar hacia abajo
+#raw 43 saltar hacia arriba
+#raw 44 saltar hacia la izquierda
+#raw 45 saltar hacia la derecha
 
-msgbox 0x5 ->
-compare LASTRESULT 0x1
-if 0x1 goto/call @sí
+34 characters FR
+37 characters R
 
-TO
-0x1278 ->
-
-4000130
-Arriba BF
-abajo 7F
-derecha EF
-izquierda DF
-
-4000131
-L 1
-
-spriteface 0xID 0xDirección
-· 0x1: Mira abajo.
-· 0x2: Mira arriba.
-· 0x3: Mira a la izquierda.
-· 0x4: Mira a la derecha.
-
-setflag 0x1271
-setvar 0x40F4 0xMIDI
-
-Shiny de trainer
-setvar 0x8003 0x404
----------------
-
-#dynamic 0xA95000
-'---------------
-#org 0xOFFSET NORMAL
-goto @inicio
-end
-#org @inicio
-
-[blue_fr]
-[red_fr]
-[black_fr]
+[transp_rs] | Transparente
+[darkgrey_rs] | Grís Oscuro
+[red_rs] | Rojo
+[lightgreen_rs] | Verde Fosforecente
+[blue_rs] | Azul
+[yellow_rs] | Amarillo
+[cyan_rs] | Azul Ligero
+[magenta_rs] | Magenta
+[grey_rs] | Gris
+[black_rs] | Negro
+[black2_rs] | Negro Dos
+[lightgrey_rs] | Gris Liviano
+[white_rs] | Blanco
+[skyblue_rs] | Azul Cielo
+[darkskyblue_rs] | Azul Cielo Oscuro
+[white2_rs] | Blanco Dos
